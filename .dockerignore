@@ -1,0 +1,9 @@
+node_modules
+build
+.git
+.env
+Dockerfile
+docker-compose.yml
+tests
+# Do NOT ignore pnpm-lock.yaml, .npmrc, or pnpm-workspace.yaml
+# as they are needed in the build context.

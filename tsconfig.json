@@ -1,0 +1,64 @@
+{
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "rootDir": "./",
+    "outDir": "./build",
+    "baseUrl": ".",
+    "paths": {
+      "#controllers/*": [
+        "./app/controllers/*"
+      ],
+      "#exceptions/*": [
+        "./app/exceptions/*"
+      ],
+      "#models/*": [
+        "./app/models/*"
+      ],
+      "#services/*": [
+        "./app/services/*"
+      ],
+      "#listeners/*": [
+        "./app/listeners/*"
+      ],
+      "#events/*": [
+        "./app/events/*"
+      ],
+      "#middleware/*": [
+        "./app/middleware/*"
+      ],
+      "#validators/*": [
+        "./app/validators/*"
+      ],
+      "#providers/*": [
+        "./providers/*"
+      ],
+      "#policies/*": [
+        "./app/policies/*"
+      ],
+      "#abilities/*": [
+        "./app/abilities/*"
+      ],
+      "#database/*": [
+        "./database/*"
+      ],
+      "#start/*": [
+        "./start/*"
+      ],
+      "#tests/*": [
+        "./tests/*"
+      ],
+      "#config/*": [
+        "./config/*"
+      ],
+      "#modules/*": [
+        "./src/modules/*"
+      ],
+      "#infrastructure/*": [
+        "./src/infrastructure/*"
+      ]
+    }
+  }
+}
