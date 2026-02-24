@@ -8,15 +8,18 @@ export default class AppProvider {
 
     public async boot() {
         const emitter = await this.app.container.make('emitter')
-        const server = await this.app.container.make('server')
 
         // Initialize Event Dispatcher
         EventDispatcher.init(emitter)
 
-        // Boot WebSocket Server
-        await Ws.boot(server)
-
         // Boot Statistics Service
         await StatisticsService.boot()
+    }
+
+    public async ready() {
+        const server = await this.app.container.make('server')
+
+        // Boot WebSocket Server
+        await Ws.boot(server)
     }
 }
