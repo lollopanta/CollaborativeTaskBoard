@@ -28,3 +28,7 @@ router.group(() => {
     router.patch('tasks/:id/move', [TasksController, 'move'])
     router.patch('tasks/:id/complete', [TasksController, 'complete'])
 }).prefix('/api/v1')
+
+router.get('/health', () => {
+    return { status: 'ok' }
+})
